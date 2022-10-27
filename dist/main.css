@@ -109,25 +109,25 @@ hr {
   cursor: pointer;
 }
 #inicio .topics .glide__slide a {
-  text-decoration: none;
+  text-decoration: none !important;
   display: flex;
   flex-direction: column;
 }
-#inicio .topics .slide-img {
+#inicio .topics .glide__slide a .slide-img {
   height: 250px;
   border-radius: 5px 5px 0 0;
   object-fit: cover;
 }
-#inicio .topics .slide-info {
+#inicio .topics .glide__slide a .slide-info {
   background-color: white;
   border-radius: 0 0 5px 5px;
   padding: 10px;
 }
-#inicio .topics .slide-info p {
+#inicio .topics .glide__slide a .slide-info p {
   color: black;
   font-weight: 900;
 }
-#inicio .topics .slide-info span {
+#inicio .topics .glide__slide a .slide-info span {
   color: rgb(82, 82, 82);
 }
 #inicio .content {
