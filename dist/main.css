@@ -87,7 +87,9 @@ hr {
   flex-direction: column;
   justify-content: center;
   background-color: #314c3c;
-  height: 100vh;
+}
+#inicio .content {
+  margin-top: 150px;
 }
 #inicio .topics {
   margin-top: 20px;
@@ -224,6 +226,55 @@ hr {
   color: white;
 }
 
+#popover-racas-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#popover-racas-content .content {
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #263b2f;
+  padding: 20px;
+}
+#popover-racas-content .content .racas-content-header {
+  display: flex;
+  justify-content: space-between;
+}
+#popover-racas-content .content .racas-carousel {
+  position: relative;
+}
+#popover-racas-content .content .racas-carousel button {
+  background: transparent;
+  border-radius: 9999px;
+  border: 1px solid white;
+  padding: 10px 20px;
+  color: white;
+  transition: all 0.1s ease-in-out;
+  position: absolute;
+  top: 50%;
+}
+#popover-racas-content .content .racas-carousel button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+#popover-racas-content .content .racas-carousel button.glide__arrow--left {
+  left: -5px;
+}
+#popover-racas-content .content .racas-carousel button.glide__arrow--right {
+  right: -5px;
+}
+#popover-racas-content .content .racas-carousel img {
+  width: 100%;
+}
+
 .cit {
   background-color: rgba(49, 76, 60, 0.08);
 }
@@ -235,8 +286,7 @@ button {
 }
 
 #introducao {
-  background-color: blue;
-  height: 100vh;
+  margin-top: 150px;
 }
 
 /*# sourceMappingURL=main.css.map */
