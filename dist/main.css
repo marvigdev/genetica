@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&family=Merriweather:wght@400;700&display=swap");
+body {
+  background-color: #FAF9F6;
+}
+
 header {
   border-bottom: 1px solid rgba(245, 245, 245, 0.2);
   position: fixed;
@@ -21,7 +25,6 @@ section {
 }
 section .content {
   width: 100%;
-  max-width: 800px;
   margin: 0 auto;
 }
 section h3 {
@@ -74,22 +77,28 @@ hr {
 }
 
 .hr.anim:before {
-  background: linear-gradient(90deg, white 0%, white 5%, transparent 5%, transparent 10%, white 10%, white 15%, transparent 15%, transparent 20%, white 20%, white 25%, transparent 25%, transparent 30%, white 30%, white 35%, transparent 35%, transparent 40%, white 40%, white 45%, transparent 45%, transparent 50%, white 50%, white 55%, transparent 55%, transparent 60%, white 60%, white 65%, transparent 65%, transparent 70%, white 70%, white 75%, transparent 75%, transparent 80%, white 80%, white 85%, transparent 85%, transparent 90%, white 90%, white 95%, transparent 95%, transparent 100%);
+  background: linear-gradient(90deg, #FAF9F6 0%, #FAF9F6 5%, transparent 5%, transparent 10%, #FAF9F6 10%, #FAF9F6 15%, transparent 15%, transparent 20%, #FAF9F6 20%, #FAF9F6 25%, transparent 25%, transparent 30%, #FAF9F6 30%, #FAF9F6 35%, transparent 35%, transparent 40%, #FAF9F6 40%, #FAF9F6 45%, transparent 45%, transparent 50%, #FAF9F6 50%, #FAF9F6 55%, transparent 55%, transparent 60%, #FAF9F6 60%, #FAF9F6 65%, transparent 65%, transparent 70%, #FAF9F6 70%, #FAF9F6 75%, transparent 75%, transparent 80%, #FAF9F6 80%, #FAF9F6 85%, transparent 85%, transparent 90%, #FAF9F6 90%, #FAF9F6 95%, transparent 95%, transparent 100%);
   background-size: 300px;
   background-position: center;
   z-index: 1;
   animation: bar 120s linear infinite;
 }
 
+.nogap:before {
+  background: linear-gradient(90deg, transparent 0%, transparent 100%) !important;
+}
+
 /* Conteúdos específicos por seção */
 #inicio {
+  background: linear-gradient(#314c3cec, #314c3cec), url("https://i.imgur.com/xuPm5Py.jpg");
   display: flex;
-  flex-direction: column;
   justify-content: center;
   background-color: #314c3c;
 }
 #inicio .content {
-  margin-top: 150px;
+  margin: 70px 0;
+  max-width: 800px;
+  width: 100%;
 }
 #inicio .topics {
   margin-top: 20px;
@@ -148,6 +157,10 @@ hr {
 #inicio .content span {
   color: rgb(228, 228, 228);
   font-size: 0.9rem;
+}
+
+.sec {
+  background-color: #FAF9F6;
 }
 
 .sec .content {
@@ -287,6 +300,16 @@ button {
 
 #introducao {
   margin-top: 150px;
+}
+#pagetitle {
+  position: relative;
+}
+
+#pagetitle img {
+  width: 200px;
+  position: absolute;
+  bottom: -20px;
+  right: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

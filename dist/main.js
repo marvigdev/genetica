@@ -15,7 +15,6 @@ btn.click(() => {
       rewind: false,
       breakpoints: {
         600: { perView: 1 },
-        800: { perView: 2 },
       },
     });
     carousel.mount()
@@ -31,7 +30,7 @@ fechar.click(() => {
 // Inicializa slider de tópicos
 new Glide(".topics", {
   type: "slider",
-  perView: 3,
+  perView: 2,
   rewind: false,
   breakpoints: {
     600: { perView: 1 },
