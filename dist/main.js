@@ -4,8 +4,24 @@ const content = $("#popover-racas-content");
 
 content.hide();
 
+let carousel;
 btn.click(() => {
   content.fadeIn(250);
+    
+  if (!carousel) {
+    carousel = new Glide(".racas-carousel", {
+      type: "carousel",
+      perView: 3,
+      rewind: false,
+      breakpoints: {
+        600: { perView: 1 },
+        800: { perView: 2 },
+      },
+    });
+    carousel.mount()
+  } else {
+    carousel.update();
+  }
 });
 
 fechar.click(() => {
@@ -15,17 +31,6 @@ fechar.click(() => {
 // Inicializa slider de tópicos
 new Glide(".topics", {
   type: "slider",
-  perView: 3,
-  rewind: false,
-  breakpoints: {
-    600: { perView: 1 },
-    800: { perView: 2 },
-  },
-}).mount();
-
-// Inicializa slider de tópicos
-new Glide(".racas-carousel", {
-  type: "carousel",
   perView: 3,
   rewind: false,
   breakpoints: {

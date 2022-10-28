@@ -102,14 +102,16 @@
             </ul>
           </div>
 
-          <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-              <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-              <i class="fa-solid fa-chevron-right"></i>
-            </button>
-            <button id="popover-racas-btn">Ver raças</button>
+          <div class="control-container" style="display: flex">
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <button id="popover-racas-btn" style="margin: 10px 0 0 5px">Ver raças</button>
           </div>
         </div>
       </div>
@@ -457,11 +459,11 @@
       </div>
     </section>
 
-    <div id="popover-racas-content">
-      <div class="content">
-        <div class="racas-content-header">
-          <h3>Raças</h3>
-          <button id="racas-content-fechar">Fechar</button>
+    <div id="popover-racas-content" style="padding: 10px;box-sizing: border-box;">
+      <div class="content" style="box-sizing: border-box;">
+        <div class="racas-content-header" style="margin: 15px 0;align-items:center;">
+          <h3 style="color: white;font-weight: 900;font-size:larger">Raças</h3>
+          <button id="racas-content-fechar" style="border: 1px solid white;border-radius:999px;padding: 7px 10px;">X</button>
         </div>
         <div class="racas-carousel">
           <div class="glide__track" data-glide-el="track">
