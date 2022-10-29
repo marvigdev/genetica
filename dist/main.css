@@ -305,11 +305,12 @@ button {
   position: relative;
 }
 
-#pagetitle img {
-  width: 200px;
-  position: absolute;
-  bottom: -20px;
-  right: 30px;
+@media(max-width: 1024px) {
+  #header-topo {
+    gap: 10px;
+    flex-direction: column-reverse;
+    align-items: flex-start !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
